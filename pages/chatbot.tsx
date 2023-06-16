@@ -41,15 +41,6 @@ const Chatbot = () => {
   const [closeRating, setCloseRating] = useState(false);
   const [waitingLiveAgent, setWaitingLiveAgent] = useState(false);
   const [imgLiveBot, setImgLiveBot] = useState('bot'); //agent
-  const [showMessage, setShowMessage] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowMessage(false);
-    }, 10000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   useEffect(() => {
     const now = Date.now();
@@ -609,22 +600,14 @@ const Chatbot = () => {
               </p>
             </div>
           )}
-          {/* {
+          {
           agentInfoMsg && (
             <div className="alert alert-info mx-3 text-center  alert-dismissible fade show" role="alert">
               Now you are chatting with {agentName}
               <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
           )
-        } */}
-          {showMessage && agentInfoMsg && (
-            <div
-              className="alert alert-info mx-3 text-center alert-dismissible fade show"
-              role="alert"
-            >
-              Now you are chatting with {agentName}
-            </div>
-          )}
+        }
           {closeState && (
             <div className="d-flex bg-chat-close-msg text-center justify-content-center py-3">
               <p className="mb-0">Thank you for contacting us. </p>
