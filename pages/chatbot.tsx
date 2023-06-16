@@ -37,7 +37,7 @@ const Chatbot = () => {
   const [showChatRating, setShowChatRating] = useState(false);
   const [agentName, setAgentName] = useState('');
   const [agentInfoMsg, setAgentInfoMsg] = useState(false);
-  const [agentImage, setAgentImage] = useState('/chat-header.png');
+  const [agentImage, setAgentImage] = useState('/chat-header.jpg');
   const [closeRating, setCloseRating] = useState(false);
   const [waitingLiveAgent, setWaitingLiveAgent] = useState(false);
   const [imgLiveBot, setImgLiveBot] = useState('bot'); //agent
@@ -133,7 +133,7 @@ const Chatbot = () => {
             setAgentInfoMsg(false);
             if (data.agent_id != 'unassigned') {
               if (!data.profile_picture) {
-                setAgentImage('/chat-header.png');
+                setAgentImage('/chat-header.jpg');
               } else {
                 setImgLiveBot('agent');
                 setAgentImage(
@@ -388,14 +388,14 @@ const Chatbot = () => {
         {/* language switch message =================*/}
         <div className={styles.botMessageContainerWrapper}>
           <div className="d-flex justify-content-center pt-1">
-            <Image src="/chat-logo.png" alt="AI" width={180} height={50} />
+            <Image src="/logo.jpg" alt="AI" width={180} height={50} />
           </div>
 
           <div
             className={`${styles.botChatMsgContainer} d-flex flex-column my-2`}
           >
             <div className="d-flex">
-              <Image src="/chat-header.png" alt="AI" width="40" height="40" />
+              <Image src="/chat-header.jpg" alt="AI" width="40" height="40" />
             </div>
             <div className={`d-flex flex-column py-3`}>
               <div
@@ -497,7 +497,7 @@ const Chatbot = () => {
               if (imgLiveBot === 'bot') {
                 icon = (
                   <Image
-                    src="/chat-header.png"
+                    src="/chat-header.jpg"
                     alt="AI"
                     width="40"
                     height="40"
@@ -635,7 +635,7 @@ const Chatbot = () => {
           {showChatRating && (
             <div className="d-flex flex-column" id="chatRating">
               <div className="d-flex">
-                <Image src="/chat-header.png" alt="AI" width="40" height="40" />
+                <Image src="/chat-header.jpg" alt="AI" width="40" height="40" />
               </div>
               <div className={`d-flex flex-column px-1 py-2`}>
                 <div

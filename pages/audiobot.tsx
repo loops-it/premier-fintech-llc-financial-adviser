@@ -195,7 +195,7 @@ const AudioBot = () => {
       {/* chat top header */}
       <div className={`${styles.chatTopBar} d-flex flex-row`}>
         <div className="col-12 text-center d-flex flex-row justify-content-between px-2">
-          <Image src="/chat-top-bar.png" alt="AI" width={150} height={30} />
+          <Image src="/logo.jpg" alt="AI" width={150} height={30} />
         </div>
       </div>
       {/* chat message area */}
@@ -214,7 +214,7 @@ const AudioBot = () => {
             if (message.type === 'apiMessage') {
               icon = (
                 <Image
-                  src="/chat-header.png"
+                  src="/chat-header.jpg"
                   alt="AI"
                   width="40"
                   height="40"

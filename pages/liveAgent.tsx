@@ -44,7 +44,7 @@ const LiveAgent = () => {
   const [showChatRating, setShowChatRating] = useState(false);
   const [agentName, setAgentName] = useState('');
   const [agentInfoMsg, setAgentInfoMsg] = useState(false);
-  const [agentImage, setAgentImage] = useState('/chat-header.png');
+  const [agentImage, setAgentImage] = useState('/chat-header.jpg');
   const [timerRunning, setTimerRunning] = useState(false);
   const [closeRating, setCloseRating] = useState(false);
   const [waitingLiveAgent, setWaitingLiveAgent] = useState(false);
@@ -136,7 +136,7 @@ const LiveAgent = () => {
             setAgentInfoMsg(false);
             if (data.agent_id != 'unassigned') {
               if (!data.profile_picture) {
-                setAgentImage('/chat-header.png');
+                setAgentImage('/chat-header.jpg');
               } else {
                 setAgentImage(
                   'https://solutions.it-marketing.website/uploads/' +
@@ -331,7 +331,7 @@ const LiveAgent = () => {
       {/* chat top header */}
       <div className={`${styles.chatTopBar} d-flex flex-row`}>
         <div className="col-12 text-center d-flex flex-row justify-content-between px-2 px-lg-2">
-          <Image src="/chat-top-bar.png" alt="AI" width={150} height={30} />
+          <Image src="/logo.jpg" alt="AI" width={150} height={30} />
           <button
             className="close-button"
             onClick={handleCloseChat}
@@ -347,7 +347,7 @@ const LiveAgent = () => {
           className={`${styles.botChatMsgContainer} d-flex flex-column my-2`}
         >
           <div className="d-flex">
-            <Image src="/chat-header.png" alt="AI" width="40" height="40" />
+            <Image src="/chat-header.jpg" alt="AI" width="40" height="40" />
           </div>
           <div className={`d-flex flex-column py-3`}>
             <div
@@ -527,7 +527,7 @@ const LiveAgent = () => {
           {showChatRating && (
             <div className="d-flex flex-column" id="chatRating">
               <div className="d-flex">
-                <Image src="/chat-header.png" alt="AI" width="40" height="40" />
+                <Image src="/chat-header.jpg" alt="AI" width="40" height="40" />
               </div>
               <div className={`d-flex flex-column px-1 py-2 p-lg-0  ms-lg-2`}>
                 <div
