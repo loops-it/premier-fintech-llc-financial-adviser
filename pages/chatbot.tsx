@@ -537,9 +537,11 @@ const Chatbot = () => {
             //   index === chatMessages.length - 1;
             const notSureMessages = [
               "Hmm, I'm not sure",
+              "Hmm.. I'm not sure.",
               "I'm sorry",
               'There is no question',
               'أنا آسف',
+              'هم، لست متأكدا.',
               'هم، لست متأكدا',
               'من دون شك',
             ];
