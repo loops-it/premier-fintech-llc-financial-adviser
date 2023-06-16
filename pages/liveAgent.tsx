@@ -352,12 +352,11 @@ const LiveAgent = () => {
                 height={180}
               />
               <p className="">
-                Hello, Welcome to DFCC Bank. Please select the language to get
-                started.
+              Hello, Welcome to Premier Fintech LLC. Please select the language to get
+                  started.
               </p>
               <p className="">
-                مرحبًا بكم في DFCC Bank. يرجى تحديد اللغة للبدء.
-              </p>
+              مرحبًا ، مرحبًا بكم في Premier Fintech LLC. يرجى تحديد اللغة للبدء.              </p>
 
               <div className="d-flex flex-row welcome-language-select w-100">
                 <div className="col-6 p-1">
