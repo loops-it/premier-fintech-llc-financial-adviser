@@ -602,7 +602,7 @@ const Chatbot = () => {
           )}
           {
           agentInfoMsg && (
-            <div className="alert paddingalert alert-info mx-3 text-center  alert-dismissible fade show" role="alert">
+            <div className="alert paddingalert alert-info mx-1 text-center  alert-dismissible fade show" role="alert">
              <p className='mb-0 alertAgent' style={{fontSize: "9px !important"}}>Now you are chatting with {agentName}</p>
               {/* <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> */}
             </div>
