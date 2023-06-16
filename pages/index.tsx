@@ -80,13 +80,13 @@ export default function Home() {
               <Link href={'/videobot'} >
                 <p className='text-dark text-uppercase mb-0'><strong>CONNECT VIA VIDEO</strong></p>
               </Link>
-            </div>
+            </div>*/}
             
             <div className={`${styles.chatSelectBox} col-12  p-3 d-flex flex-column align-items-center ${styles.boxColor4} mb-2 mb-lg-0`}>
               <Link href={'/audiobot'} >
                 <p className='text-dark text-uppercase mb-0'><strong>CONNECT VIA AUDIO</strong></p>
               </Link>
-          </div> */}
+          </div> 
           </div>
 
         </div>
