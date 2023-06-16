@@ -32,7 +32,7 @@ const AudioBot = () => {
   }>({
     messages: [
       {
-        message: 'Hi, what would you like to learn about DFCC Bank?',
+        message: 'Hi, what would you like to learn about Premier Fintech LLC?',
         type: 'apiMessage',
       },
     ],
