@@ -58,7 +58,7 @@ export default function Home() {
       >
         <div className={`${styles.chatTopBar} d-flex flex-row `}>
           <div className="col-12 text-center d-flex flex-row justify-content-between px-2">
-            <Image src="/logo.jpg" alt="AI" width={150} height={30} />
+            <Image src="/logo.jpg" alt="AI" width={120} height={40} className='img-fluid' />
           </div>
         </div>
         <div
@@ -70,14 +70,14 @@ export default function Home() {
             width={100}
             height={120}
             alt="chat header image"
-            className={` mt-2`}
+            className={` mt-2 img-fluid`}
           />
           <Image
             src={'/logo.jpg'}
             width={180}
             height={60}
             alt="chat header image"
-            className={`${styles.welcomeImage} py-2`}
+            className={` py-2 img-fluid`}
           />
           <p className={`mb-3 mt-2 ${styles.selectMethodtxt}`}>
             SELECT YOUR PREFERRED CHAT

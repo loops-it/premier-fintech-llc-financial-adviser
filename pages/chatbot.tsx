@@ -363,7 +363,7 @@ const Chatbot = () => {
       {/* chat top header =======================*/}
       <div className={`${styles.chatTopBar} d-flex flex-row `}>
         <div className="col-12 text-center d-flex flex-row justify-content-between px-2">
-          <Image src="/logo.jpg" alt="AI" width={150} height={30} />
+          <Image src="/logo.jpg" alt="AI" width={90} height={20} className='img-fluid' />
           <button
             className="close-button"
             onClick={handleCloseChat}
@@ -379,7 +379,7 @@ const Chatbot = () => {
         {/* language switch message =================*/}
         <div className={styles.botMessageContainerWrapper}>
           <div className="d-flex justify-content-center pt-1">
-            <Image src="/logo.jpg" alt="AI" width={180} height={50} />
+            <Image src="/logo.jpg" alt="AI" width={130} height={30} className='img-fluid' />
           </div>
 
           <div
