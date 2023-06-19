@@ -323,7 +323,7 @@ const LiveAgent = () => {
       {/* chat top header */}
       <div className={`${styles.chatTopBar} d-flex flex-row`}>
         <div className="col-12 text-center d-flex flex-row justify-content-between px-2 px-lg-2">
-          <Image src="/logo.jpg" alt="AI" width={150} height={30} />
+        <Image src="/logo.jpg" alt="AI" width={90} height={20} className='img-fluid' />
           <button
             className="close-button"
             onClick={handleCloseChat}
@@ -339,18 +339,19 @@ const LiveAgent = () => {
           className={`${styles.botChatMsgContainer} d-flex flex-column my-2`}
         >
           <div className="d-flex">
-            <Image src="/chat-header.jpg" alt="AI" width="40" height="40" />
+          <Image src="/logo.jpg" alt="AI" width={130} height={30} className='img-fluid' />
           </div>
           <div className={`d-flex flex-column py-3`}>
             <div
               className={`welcomeMessageContainer d-flex flex-column align-items-center align-items-lg-start  my-lg-1`}
             >
               <Image
-                src="/language-img.png"
-                alt="AI"
-                width={250}
-                height={180}
-              />
+                  src="/language-img.png"
+                  alt="AI"
+                  width={220}
+                  height={150}
+                  className='img-fluid'
+                />
               <p className="">
               Hello, Welcome to Premier Fintech LLC. Please select the language to get
                   started.

@@ -386,7 +386,7 @@ const Chatbot = () => {
             className={`${styles.botChatMsgContainer} d-flex flex-column my-2`}
           >
             <div className="d-flex">
-              <Image src="/chat-header.jpg" alt="AI" width="40" height="40" />
+              <Image src="/chat-header.jpg" alt="AI" width="40" height="40" className='img-fluid' />
             </div>
             <div className={`d-flex flex-column py-3`}>
               <div
@@ -397,6 +397,7 @@ const Chatbot = () => {
                   alt="AI"
                   width={220}
                   height={150}
+                  className='img-fluid'
                 />
                 <p className="mt-2">
                   Hello, Welcome to Premier Fintech LLC. Please select the language to get

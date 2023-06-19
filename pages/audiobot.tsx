@@ -195,7 +195,7 @@ const AudioBot = () => {
       {/* chat top header */}
       <div className={`${styles.chatTopBar} d-flex flex-row`}>
         <div className="col-12 text-center d-flex flex-row justify-content-between px-2">
-          <Image src="/logo.jpg" alt="AI" width={150} height={30} />
+        <Image src="/logo.jpg" alt="AI" width={90} height={20} className='img-fluid' />
         </div>
       </div>
       {/* chat message area */}
@@ -213,14 +213,7 @@ const AudioBot = () => {
             console.log('message : => ', message.message);
             if (message.type === 'apiMessage') {
               icon = (
-                <Image
-                  src="/chat-header.jpg"
-                  alt="AI"
-                  width="40"
-                  height="40"
-                  className={styles.botImage}
-                  priority
-                />
+                <Image src="/chat-header.jpg" alt="AI" width="40" height="40" className='img-fluid' />
               );
               className = styles.apimessage;
               userStyles = 'justify-content-start flex-row float-start';
